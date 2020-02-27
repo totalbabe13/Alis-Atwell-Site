@@ -1,0 +1,255 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+
+  }
+
+body {
+  filter:contrast(1.5);
+  background: url(assets/images/fast-copy.gif) no-repeat center center fixed;
+ -webkit-background-size: cover;
+ -moz-background-size: cover;
+ -o-background-size: cover;
+ background-size: cover;
+}
+
+.main-wrapper {
+  filter: contrast(0.8);
+  background: url(assets/images/books.png) no-repeat center center fixed;
+  width: 97vw;
+  height: 100vh;
+  margin: auto;
+  overflow: scroll;
+}
+
+.nav-container {
+  position: fixed;
+  top: 0vh;
+  height: 8vh;
+  width: 100vw;
+  margin: 0 auto;
+  display: none;
+  grid-template-rows: 10vh 10vh;
+  grid-template-columns: 20vw 20vw 20vw 20vw;
+  z-index: 1;
+  border: 4px solid #f12f51;
+  }
+
+
+.nav-link-top {
+  width: 9vw;
+  margin: 1px auto;
+  grid-row-start: 1;
+  height: 5vh;
+  border: 1px solid black;
+  font-size: 8pt;
+  text-align: center;
+  position: relative;
+}
+
+.nav-link-top.games {
+background-color: red;
+}
+
+.nav-footer {
+  background: #b8dff1;
+  position: fixed;
+  top: 92vh;
+  height: 8vh;
+  width: 100vw;
+  border: 4px solid #f12f51;
+  margin: 0 auto;
+  display: grid;
+}
+.heart-grid {
+  position: relative;
+  top: 3vh;
+  margin: 0 auto;
+  width: 75%;
+  border: 1px solid crimson;
+}
+
+
+.heart-grid:after{
+  content: "";
+  display: block;
+  padding-bottom: 100%;
+}
+
+.main-heart {
+  position: absolute;
+  border: 1px solid;
+  width: 100%;
+  height: 79%;
+}
+.heart-text-hobbies {
+  left: 51%;
+  top: 21%;
+  position: absolute;
+  width: 12%;
+  height: 5%;
+  /* border: 1px solid; */
+}
+.heart-text-editing{
+  left: 4%;
+  top: 29%;
+  position: absolute;
+  width: 23%;
+  height: 5%;
+}
+.heart-text-direction{
+  left: 13%;
+  top: 37%;
+  position: absolute;
+  width: 23%;
+  height: 5%;
+}
+.heart-text-journal{
+  left: 86%;
+  top: 13%;
+  position: absolute;
+  width: 23%;
+  height: 5%;
+}
+.heart-text-styling{
+  left: 80%;
+  top: 42%;
+  position: absolute;
+  width: 23%;
+  height: 5%;
+}
+.heart-text-friends{
+  left: 42%;
+  top: 59%;
+  position: absolute;
+  width: 23%;
+  height: 5%;
+}
+.heart-text-foods{
+  left: 50%;
+  top: 74%;
+  position: absolute;
+  /* width: 23%; */
+  height: 5%;
+}
+.heart-text-mood{
+  left: 56%;
+  top: 64%;
+  position: absolute;
+  /* width: 23%; */
+  height: 5%;
+}
+
+.highlights-container {
+  width: 95vw;
+  height: 50vh;
+  border: 4px solid #da00ff;
+}
+
+/* - - - - - - - - */
+.marquee {
+            height: 50px;
+            overflow: hidden;
+            position: relative;
+            background: #fefefe;
+            color: #333;
+            border: 1px solid #4a4a4a;
+        }
+
+        .marquee p {
+            position: absolute;
+            width: 100%;
+            height: 100%;
+            margin: 0;
+            line-height: 50px;
+            text-align: center;
+            -moz-transform: translateX(100%);
+            -webkit-transform: translateX(100%);
+            transform: translateX(100%);
+            -moz-animation: scroll-left 2s linear infinite;
+            -webkit-animation: scroll-left 2s linear infinite;
+            animation: scroll-left 20s linear infinite;
+        }
+
+        @-moz-keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+            }
+        }
+
+        @-webkit-keyframes scroll-left {
+            0% {
+                -webkit-transform: translateX(100%);
+            }
+            100% {
+                -webkit-transform: translateX(-100%);
+            }
+        }
+
+        @keyframes scroll-left {
+            0% {
+                -moz-transform: translateX(100%);
+                -webkit-transform: translateX(100%);
+                transform: translateX(100%);
+            }
+            100% {
+                -moz-transform: translateX(-100%);
+                -webkit-transform: translateX(-100%);
+                transform: translateX(-100%);
+            }
+        }
+/* - - - - - - - - */
