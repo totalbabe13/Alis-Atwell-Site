@@ -51,10 +51,6 @@ table {
   box-sizing: border-box;
 }
 
-html {
-
-  }
-
 body {
   filter:contrast(1.5);
   background: url(assets/images/fast-copy.gif) no-repeat center center fixed;
@@ -66,7 +62,8 @@ body {
 
 .main-wrapper {
   filter: contrast(0.8);
-  background: url(assets/images/books.png) no-repeat center center fixed;
+  background: url(assets/images/books.png);
+  background-size: cover;
   width: 97vw;
   height: 100vh;
   margin: auto;
@@ -74,35 +71,141 @@ body {
 }
 
 .nav-container {
+  background: url(assets/images/bit_backdrop.jpg);
+  background-size: contain;
   position: fixed;
   top: 0vh;
-  height: 8vh;
+  height: 13vh;
   width: 100vw;
   margin: 0 auto;
-  display: none;
+  display: grid;
   grid-template-rows: 10vh 10vh;
   grid-template-columns: 20vw 20vw 20vw 20vw;
   z-index: 1;
-  border: 4px solid #f12f51;
-  }
-
-
-.nav-link-top {
-  width: 9vw;
-  margin: 1px auto;
-  grid-row-start: 1;
-  height: 5vh;
-  border: 1px solid black;
-  font-size: 8pt;
-  text-align: center;
-  position: relative;
+  border: 4px solid #010006;
 }
 
-.nav-link-top.games {
-background-color: red;
+.main-wrapper {
+  filter: contrast(0.8);
+  background: url(assets/images/books.png);
+  background-size: cover;
+  width: 97vw;
+  height: 100vh;
+  margin: auto;
+  overflow: scroll;
+}
+/* MOBILE PORTRAIT */
+@media (min-width: 319px) {
+
+  .nav-container {
+   background: url(assets/images/bit_backdrop.jpg);
+   background-size: contain;
+   position: fixed;
+   top: 0vh;
+   height: 9vh;
+   width: 100vw;
+   margin: 0 auto;
+   display: grid;
+   grid-template-rows: 1fr 1fr;
+   grid-template-columns: repeat(4,1fr);
+   z-index: 1;
+   border: 3px solid #7163ea;
+   border-radius: 3px;
+     }
+    .nav-link-top {
+    padding-top: 0.3vh;
+    font-family: 'Gorditas';
+    position: relative;
+    background-color: #ffc10778;
+    height: auto;
+    font-size: 9pt;
+    text-align: center;
+    vertical-align: middle;
+    border: 2px solid #00a1ff54;
+    }
+    .nav-link-top:hover {
+      /* color: white; */
+    }
+
+    .heart-grid {
+      position: relative;
+      top: 22vh;
+      margin: 0 auto;
+      width: 95%;
+      /* border: 1px solid crimson; */
+    }
+    .heart-grid:after{
+      content: "";
+      display: block;
+      padding-bottom: 100%;
+    }
+
+    .main-heart {
+      filter: contrast(1.5) drop-shadow(1px 4px 14px chartreuse);
+      position: absolute;
+      /* border: 1px solid; */
+      width: 100%;
+      height: 79%;
+    }
+
+    .nav-footer{
+      background: url(assets/images/bit_backdrop.jpg);
+      background-size: contain;
+      position: fixed;
+      top: 91vh;
+      height: 9%;
+      width: 100vw;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4,1fr);
+      z-index: 1;
+      border: 3px solid #7163ea;
+      border-radius: 3px;
+    }
 }
 
-.nav-footer {
+/* MOBILE LANDSCAPE */
+@media (min-width: 567px) {
+  .nav-container {
+        height: 14vh;
+     }
+
+    .heart-grid {
+      width: 51%;
+    }
+}
+
+/* TABLET PORTAIT */
+@media (min-width: 767px) {
+   .nav-link-top {
+     font-size: 17pt;
+     padding-top: 1.5vh;
+   }
+   .heart-grid {
+    width: 66%;
+   }
+}
+
+@media (min-width: 800px) {
+
+   .heart-grid {
+    width: 46%;
+   }
+}
+/* .main-wrapper {
+  filter: contrast(0.8);
+  background: url(assets/images/books.png);
+  background-size: cover;
+  width: 97vw;
+  height: 100vh;
+  margin: auto;
+  overflow: scroll;
+} */
+
+
+
+/* .nav-footer {
   background: #b8dff1;
   position: fixed;
   top: 92vh;
@@ -139,7 +242,7 @@ background-color: red;
   position: absolute;
   width: 12%;
   height: 5%;
-  /* border: 1px solid; */
+  border: 1px solid;
 }
 .heart-text-editing{
   left: 4%;
@@ -180,14 +283,14 @@ background-color: red;
   left: 50%;
   top: 74%;
   position: absolute;
-  /* width: 23%; */
+  /* width: 23%;
   height: 5%;
 }
 .heart-text-mood{
   left: 56%;
   top: 64%;
   position: absolute;
-  /* width: 23%; */
+  /* width: 23%;
   height: 5%;
 }
 
@@ -195,10 +298,10 @@ background-color: red;
   width: 95vw;
   height: 50vh;
   border: 4px solid #da00ff;
-}
+} */
 
 /* - - - - - - - - */
-.marquee {
+/* .marquee {
             height: 50px;
             overflow: hidden;
             position: relative;
@@ -251,5 +354,5 @@ background-color: red;
                 -webkit-transform: translateX(-100%);
                 transform: translateX(-100%);
             }
-        }
+        } */
 /* - - - - - - - - */
