@@ -94,6 +94,23 @@ body {
   margin: auto;
   overflow: scroll;
 }
+
+.nav-footer{
+      background: url(assets/images/bit_backdrop.jpg);
+      background-size: contain;
+      position: fixed;
+      left: 0;
+      bottom: 0;
+      height: 9%;
+      width: 100vw;
+      margin: 0 auto;
+      display: grid;
+      grid-template-rows: 1fr;
+      grid-template-columns: repeat(4,1fr);
+      z-index: 1;
+      border: 3px solid #7163ea;
+      border-radius: 3px;
+    }
 /* MOBILE PORTRAIT */
 @media (min-width: 319px) {
 
@@ -123,15 +140,66 @@ body {
     vertical-align: middle;
     border: 2px solid #00a1ff54;
     }
-    .nav-link-top:hover {
-      /* color: white; */
+
+    .highlights-wrapper {
+      position: relative;
+      top: 21vh;
+      display: grid;
+      grid-template-rows: auto;
+      grid-gap: 2vh;
+    }
+    .highlights-container {
+      width: 61vw;
+      height: 21vh;
+      margin: 0 auto;
+      border: 4px solid black;
+      background-color: white;
     }
 
+    .highlights-container-wide {
+      width: 80vw;
+      height: 21vh;
+      margin: 0 auto;
+      border: 4px solid black;
+      background-color: white;
+    }
+
+    .highlight-title{
+      background-color: yellow;
+      padding-bottom: 1vh;
+    }
+
+    .highlight-blurb {
+
+    }
+
+    .highlight-blurb{
+
+    }
+
+    .highlights-container.one {
+    }
+
+    .highlights-container.two {
+    }
+    .empty-spacer {
+      height: 20vh;
+      width: 100vw;
+    }
+
+    .nav-footer{
+      /* top:79vh; */
+    }
+    /* .nav-link-top:hover {
+         color: white;
+    } */
+
+/* - - - - - HEART MENU - - - -  */
     .heart-grid {
       position: relative;
       top: 22vh;
       margin: 0 auto;
-      width: 95%;
+      width: 59%;
       /* border: 1px solid crimson; */
     }
     .heart-grid:after{
@@ -148,11 +216,113 @@ body {
       height: 79%;
     }
 
+    .heart-text-hobbies {
+      text-decoration: none;
+      position: absolute;
+      left: 95%;
+      top: 5%;
+      font-family: 'gorditas';
+      font-size: 13pt;
+      -webkit-text-stroke: 1px #00fd08;
+      color: black;
+    }
+
+    .heart-text-editing {
+      text-decoration: none;
+      position: absolute;
+      /* width: 23%; */
+      left: -26%;
+      top: -7%;
+      font-family: 'gorditas';
+      font-size: 13pt;
+      -webkit-text-stroke: 1px #00fd08;
+      color: black;
+      font-style: italic;
+    }
+
+    .heart-text-direction {
+      text-decoration: none;
+      position: absolute;
+      left: -28%;
+      width: 0px;
+      top: 42%;
+      font-family: 'gorditas';
+      font-size: 13pt;
+      -webkit-text-stroke: 1px #00fd08;
+      color: black;
+      font-style: italic;
+    }
+
+    .heart-text-journal {
+      text-decoration: none;
+      position: absolute;
+      left: -36%;
+      top: 19%;
+      font-family: 'gorditas';
+      font-size: 13pt;
+      -webkit-text-stroke: 1px #00fd08;
+      color: black;
+      font-style: italic;
+    }
+    .heart-text-styling {
+      text-decoration: none;
+      position: absolute;
+      left: 86%;
+      width: 50%;
+      top: 44%;
+      font-family: 'gorditas';
+      font-size: 13pt;
+      -webkit-text-stroke: 1px #00fd08;
+      color: black;
+      font-style: italic;
+    }
+
+     .heart-text-friends {
+       text-decoration: none;
+       position: absolute;
+       left: 30%;
+       top: 41%;
+       font-family: 'gorditas';
+       font-size: 13pt;
+       -webkit-text-stroke: 1px #00fd08;
+       color: black;
+       font-style: italic;
+     }
+
+     .heart-text-foods {
+       text-decoration: none;
+       width: 0;
+       position: absolute;
+       left: 41%;
+       top: 18%;
+       font-family: 'gorditas';
+       font-size: 12pt;
+       -webkit-text-stroke: 1px #00fd08;
+       color: black;
+       font-style: italic;
+     }
+
+     .heart-text-mood {
+       text-decoration: none;
+       position: absolute;
+       left: 14%;
+       top: 77%;
+       font-family: 'gorditas';
+       font-size: 12pt;
+       -webkit-text-stroke: 1px #00fd08;
+       color: black;
+       font-style: italic;
+     }
+/* - - - - - END : HEART MENU - - - -  */
+
     .nav-footer{
       background: url(assets/images/bit_backdrop.jpg);
       background-size: contain;
-      position: fixed;
-      top: 91vh;
+      position:fixed;
+      left:0px;
+      bottom:0px;
+      /* position: fixed;
+      top: 79vh; */
       height: 9%;
       width: 100vw;
       margin: 0 auto;
@@ -168,13 +338,48 @@ body {
 /* MOBILE LANDSCAPE */
 @media (min-width: 567px) {
   .nav-container {
-        height: 14vh;
-     }
-
-    .heart-grid {
+        height: auto;
+  }
+  .heart-grid {
       width: 51%;
-    }
+  }
+  .heart-item {
+    font-size: 20pt;
+  }
+  .heart-text-editing {
+    top: -2%;
+  }
+  .heart-text-journal {
+    left:-23%;
+  }
+  .heart-text-direction {
+    left:-14%;
+  }
+  .heart-text-styling {
+    left:80%;
+    top: 52%;
+  }
+  .heart-text-friends {
+    left:36%;
+  }
+  .heart-text-foods {
+    left: 53%;
+    top: 18%;
+  }
+
+  .highlights-container {
+    height: 35vh;
+  }
+
+  .highlights-container-wide {
+    height: 35vh;
+  }
+  .nav-footer {
+    /* top: 93vh;
+    height: auto; */
+  }
 }
+
 
 /* TABLET PORTAIT */
 @media (min-width: 767px) {
@@ -187,119 +392,29 @@ body {
    }
 }
 
+
 @media (min-width: 800px) {
 
    .heart-grid {
-    width: 46%;
+    width: 50%;
+   }
+   .heart-item {
+     font-size: 24pt;
    }
 }
-/* .main-wrapper {
-  filter: contrast(0.8);
-  background: url(assets/images/books.png);
-  background-size: cover;
-  width: 97vw;
-  height: 100vh;
-  margin: auto;
-  overflow: scroll;
-} */
 
 
-
-/* .nav-footer {
-  background: #b8dff1;
-  position: fixed;
-  top: 92vh;
-  height: 8vh;
-  width: 100vw;
-  border: 4px solid #f12f51;
-  margin: 0 auto;
-  display: grid;
-}
-.heart-grid {
-  position: relative;
-  top: 3vh;
-  margin: 0 auto;
-  width: 75%;
-  border: 1px solid crimson;
-}
-
-
-.heart-grid:after{
-  content: "";
-  display: block;
-  padding-bottom: 100%;
-}
-
-.main-heart {
-  position: absolute;
-  border: 1px solid;
-  width: 100%;
-  height: 79%;
-}
-.heart-text-hobbies {
-  left: 51%;
-  top: 21%;
-  position: absolute;
-  width: 12%;
-  height: 5%;
-  border: 1px solid;
-}
-.heart-text-editing{
-  left: 4%;
-  top: 29%;
-  position: absolute;
-  width: 23%;
-  height: 5%;
-}
-.heart-text-direction{
-  left: 13%;
-  top: 37%;
-  position: absolute;
-  width: 23%;
-  height: 5%;
-}
-.heart-text-journal{
-  left: 86%;
-  top: 13%;
-  position: absolute;
-  width: 23%;
-  height: 5%;
-}
-.heart-text-styling{
-  left: 80%;
-  top: 42%;
-  position: absolute;
-  width: 23%;
-  height: 5%;
-}
-.heart-text-friends{
-  left: 42%;
-  top: 59%;
-  position: absolute;
-  width: 23%;
-  height: 5%;
-}
-.heart-text-foods{
-  left: 50%;
-  top: 74%;
-  position: absolute;
-  /* width: 23%;
-  height: 5%;
-}
-.heart-text-mood{
-  left: 56%;
-  top: 64%;
-  position: absolute;
-  /* width: 23%;
-  height: 5%;
-}
-
-.highlights-container {
+/* .highlights-container {
   width: 95vw;
   height: 50vh;
   border: 4px solid #da00ff;
 } */
 
+@media (min-width: 920px) {
+  .heart-grid {
+    width: 40%;
+  }
+}
 /* - - - - - - - - */
 /* .marquee {
             height: 50px;
