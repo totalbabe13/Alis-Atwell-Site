@@ -187,6 +187,36 @@ body {
       width: 100vw;
     }
 
+		.extra-content-wrapper {
+			width: 97vw;
+      height: 95vh;
+      border: 3px solid red;
+			display: grid;
+      grid-template-rows: repeat(5, 1fr);
+      grid-template-columns: repeat(2,1fr);
+			grid-gap: 3vw;
+		}
+		.extra-item-one {
+			background-color: #65f3f3;
+      border: 2px solid;
+		}
+
+		.extra-item-two {
+			background-color: #FFC107;
+      border: 2px solid;
+      height: 211%;
+      width: 70%;
+      grid-column-start: span 2;
+      position: relative;
+      left: 16vw;
+		}
+
+		.extra-item-three {
+			background-color: #65f3f3;
+      border: 2px solid;
+			grid-row-start: 4;
+		}
+
     .nav-footer{
       /* top:79vh; */
     }
