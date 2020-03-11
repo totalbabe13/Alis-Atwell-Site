@@ -79,10 +79,14 @@ body {
   height: 100vh;
 	width: 100vw;
 	background: url(studio_set3.png) no-repeat center center fixed;
-	  -webkit-background-size: cover;
-	  -moz-background-size: cover;
-	  -o-background-size: cover;
-	  background-size: cover;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+  overflow: scroll;
+	display: grid;
+  grid-template-rows: 15vh 5vh auto 8vh auto 3vh;
+	grid-gap: 2vh;
 }
 
 .glass-heart {
@@ -90,7 +94,7 @@ body {
   filter: saturate(1.5);
 }
 
-.text-test {
+.header-text {
 	text-align: center;
 	font-size: 21pt;
   font-family: 'Metrophobic', sans-serif;
@@ -101,14 +105,12 @@ body {
 @media (min-width: 319px) {
   .bullet-point-container {
 		height: 37vh;
-    width: 86vw;
+    width: 90vw;
     background: #ffffff7a;
     margin: 0 auto;
-    position: relative;
-    top: 3vw;
     border: 4px solid black;
 		display: grid;
-    grid-template-rows: repeat(10,5vh);
+    grid-template-rows: repeat(12,6.5vh);
 		overflow: scroll;
 	}
 	.fade-ground {
@@ -127,18 +129,17 @@ body {
 
 	}
 	.divider {
-		font-size: 33pt;
+		font-size: 23pt;
+    line-height: 5vh;
 		color: white;
-    position: relative;
-    top: 4vh;
     text-align: center;
     text-shadow: 0px 0px 12px #87ff04;
 	}
 	.image-viewer {
-		position: relative;
-    top: 8vh;
+		/* position: relative;
+    top: 8vh; */
     height: 50vh;
-    width: 95vw;
+    width: 90vw;
     border: 4px solid;
     margin: 0 auto;
     background: #ffffff7a;
@@ -156,19 +157,55 @@ body {
 	.divider-overstock {
 		font-size: 16pt;
     color: white;
-    position: relative;
-    top: 10vh;
-    height: 29vw;
     text-align: center;
     text-shadow: 0px 0px 12px #87ff04;
 	}
 
-	.overstock-conatiner {
+	.overstock-container {
+		position: relative;
+		top: 2vh;
 		border: 4px solid;
     margin: 0 auto;
     width: 90vw;
     height: 50vh;
     background: #ffffff47;
 		display: grid;
+		grid-template-rows: 7vh;
+		overflow: scroll;
 	}
+
+	.overstock-link {
+		color: chartreuse;
+    text-shadow: 0px 0px 12px #87ff04;
+    margin: 1vw;
+    text-align: center;
+	}
+	.space-div{
+		height: 22vw;
+	}
+}
+
+/* MOBILE -LANDSCAPE */
+ @media (min-width: 567px) {
+	 .main-wrapper{
+		 grid-template-rows: 12vh 11vh auto 8vh auto 6vh;
+	 }
+}
+ /* - - - - - - - - - - - - */
+/* TABLET PORTRAIT */
+
+@media (min-width: 767px) {
+	.header-text{
+		font-size: 40pt;
+	}
+	.bullet-text {
+		font-size: 22pt;
+	}
+	.overstock-link	{
+		font-size: 18pt;
+	}
+}
+
+@media (min-width: 767px) {
+
 }
