@@ -1,0 +1,204 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+@media (min-width: 319px) {
+  .page-wrapper {
+    height: 100vh;
+    width: 100vw;
+		border: 4px solid;
+  }
+	.home-button {
+		width: 18vw;
+    position: absolute;
+    top: 88%;
+    left: 42%;
+    filter: saturate(2.5) brightness(1.5);
+	}
+	.header-wrapper {
+		width: 100%;
+    height: 18vh;
+		/* border: 4px solid black; */
+		background: linear-gradient(5deg, #ffffff, #ffffff, #00fb4c, #fdfdfd, #fdfdfd);
+	  background-size: 1000% 1000%;
+	  -webkit-animation: AnimationName 30s ease infinite;
+	  -moz-animation: AnimationName 30s ease infinite;
+	  animation: AnimationName 30s ease infinite;
+	}
+  header {
+		width: 100%;
+    height: 100%;
+    text-align: center;
+    line-height: 15vh;
+    position: relative;
+    font-size: 21vw;
+    color: white;
+    text-shadow: 2px 2px 5px #000000;
+		background-image: url(qs5.png);
+		background-size: contain;
+  }
+	.section-divider {
+		border: 2px solid;
+	}
+	.links-wrapper {
+		position: relative;
+		width: 100%;
+    height: 82%;
+		background-image: url(matrix1.jpg);
+		background-size: contain;
+		border: 4px solid black;
+		overflow: scroll;
+	}
+
+	a {
+		word-break: break-word;
+		text-decoration: none;
+    color: #26ff0063;
+    font-family: Gorditas;
+	}
+	a:visited {
+		color: white;
+	}
+	.link-item {
+		padding: 3vw;
+    filter: drop-shadow(0px 2px 6px black);
+    background-color: #ffffff;
+    text-align: justify;
+    font-size: 15pt;
+    margin: 2vh;
+    color: black;
+    text-shadow: 2px 2px 3px #02ff26;
+	}
+	.chain {
+		display: block;
+    width: 92vw;
+    height: 13vw;
+    margin: 0 auto;
+	}
+
+	@-webkit-keyframes AnimationName {
+	    0%{background-position:46% 0%}
+	    50%{background-position:55% 100%}
+	    100%{background-position:46% 0%}
+	}
+	@-moz-keyframes AnimationName {
+	    0%{background-position:46% 0%}
+	    50%{background-position:55% 100%}
+	    100%{background-position:46% 0%}
+	}
+	@keyframes AnimationName {
+	    0%{background-position:46% 0%}
+	    50%{background-position:55% 100%}
+	    100%{background-position:46% 0%}
+	}
+}
+
+@media (min-width: 567px) {
+	.page-wrapper {}
+	.header-wrapper {
+    /* width: 99vw; */
+	}
+	header {
+	  font-size: 30pt;
+	}
+	.links-wrapper {}
+	a {}
+	.link-item {}
+	.chain {}
+	.home-button {
+	 width: 11%;
+	 top: 0%;
+	 left: 2%;
+  }
+}
+
+@media (min-width: 767px) {
+	.page-wrapper {}
+	.header-wrapper {
+
+	}
+	header {
+    font-size: 55pt;
+	}
+	.links-wrapper {}
+	a {}
+	.link-item {
+		width: 50vw;
+    margin: 4px auto;
+	}
+	.chain {
+		width: 40vw;
+    height: 9vh;
+	}
+}
+
+@media (min-width: 1023px) {
+	.page-wrapper {}
+	.header-wrapper {
+
+	}
+	header {
+    font-size: 55pt;
+	}
+	.links-wrapper {}
+
+	a {}
+	.link-item {
+		width: 50vw;
+    margin: 4px auto;
+	}
+	.chain {
+		width: 40vw;
+    height: 9vh;
+	}
+}

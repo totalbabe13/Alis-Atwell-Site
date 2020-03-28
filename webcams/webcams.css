@@ -1,0 +1,123 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+
+@media (min-width: 319px) {
+  .page-container {
+    height: 100vh;
+    width: 100vw;
+    background-image: url(camz6.gif);
+  }
+  header {
+    line-height: 7vh;
+    font-family: Gorditas;
+    color: #34587f;
+    font-size: 20pt;
+    text-align: center;
+    height: 7vh;
+    background-color: #00ffa3;
+    text-shadow: 0px 0px 4px white;
+    /* animation:blinkingText 1.2s infinite; */
+  }
+
+  .content-grid {
+    position: relative;
+    top: 0vh;
+    border: 4px solid #040404;
+    width: 100vw;
+    height: 82vh;
+    background: linear-gradient(0deg, rgba(121,242,244,0.7) 0%, rgba(255,255,255,1.5) 100%);
+    overflow: scroll;
+    display: grid;
+    grid-auto-rows: 8vh;
+    grid-gap: 2vh;
+  }
+  .cam-link{
+    text-indent: 3vh;
+    text-decoration-style: wavy;
+    font-family: Metrophobic;
+    color: #512DA8;
+    position: relative;
+    left: 5%;
+    background-color: #00ff3359;
+    width: 85%;
+    line-height: 7vh;
+  }
+  .home-button-container{
+    text-align: center;
+    position: fixed;
+    bottom: 4px;
+    width: 98vw;
+  }
+
+  .home-button {
+    width: 100px;
+    filter: saturate(2.5) brightness(1.3) hue-rotate(179deg);
+    margin: 0 33.8%;
+  }
+
+}
+
+@media (min-width: 374px) {
+  .home-button {
+    width: 127px;
+  }
+}
+
+/* @keyframes blinkingText{
+  0%{     color: #000;    }
+  49%{    color: #000; }
+  60%{    color: transparent; }
+  99%{    color:transparent;  }
+  100%{   color: #000;    }
+} */

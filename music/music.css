@@ -1,0 +1,366 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+body {
+  /* filter: saturate(1.9); */
+  width: 100vw;
+  height: 100vh;
+  background: url(russian_tropics3.jpg) no-repeat center center fixed;
+	-webkit-background-size: cover;
+	-moz-background-size: cover;
+	-o-background-size: cover;
+	background-size: cover;
+}
+
+.main-wrapper{
+  filter: saturate(1.8);
+}
+#knife1:hover {
+  cursor: pointer;
+}
+@media (min-width: 319px) {
+  header {
+    position: relative;
+    top: 8vh;
+    color: white;
+    text-align: center;
+    font-size: 30pt;
+		background-image: url(ants.gif);
+  }
+  .heart-grid{
+    width: 96%;
+    /* border: 4px solid white; */
+    position: relative;
+    top: 26.5vh;;
+    left: 6%;
+    /* background-color: red; */
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+
+  }
+  .heart-grid:after{
+    content: "";
+    display: block;
+    padding-bottom: 100%;
+  }
+  .hearts {
+    filter: saturate(1.8) contrast(1.3);
+    width: 92%;
+    grid-row-start: 1;
+    grid-column-start: 1;
+    grid-row-end: 3;
+    grid-column-end: 4;
+    position: absolute;
+  }
+  #knife-1 {
+    position: absolute;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 1;
+    grid-column-start: 1;
+  }
+
+  #knife-2 {
+    position: absolute;
+    top: -9vh;
+    left: -15vw;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+
+  #knife-3 {
+    position: absolute;
+    top: -13vh;
+    left: 7vw;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+  #knife-4 {
+    position: absolute;
+    top: 4vh;
+    left: 1vw;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 1;
+    grid-column-start: 2;
+  }
+  #knife-5 {
+    position: absolute;
+    top: -3vh;
+    left: -13vw;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 1;
+    grid-column-start: 3;
+  }
+
+  #knife-6 {
+    position: absolute;
+    top: -1vh;
+    left: -1vw;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 2;
+    grid-column-start: 1;
+  }
+
+  #knife-7 {
+    position: absolute;
+    top: 8vh;
+    left: -11vw;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+  #knife-8 {
+    position: absolute;
+    top: 1vh;
+    left: 15vw;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 2;
+    grid-column-start: 2;
+  }
+  #knife-9 {
+    position: absolute;
+    top: -8vh;
+    left: -1vw;
+    z-index: 2;
+    transform: rotate(220deg);
+    width: 31vw;
+    filter: drop-shadow(-4px -4px 3px blue);
+    grid-row-start: 2;
+    grid-column-start: 3;
+  }
+}
+@media screen and (min-width: 567px) {
+  header {
+    top: 0;
+  }
+   .heart-grid{
+    width: 42%;
+    top: 12.5vh;
+    left: 28%;
+  }
+  .hearts {
+    width: 93%;
+  }
+
+  #knife-1 {
+    width: 13vw;
+    left: 1%;
+    top: -3%;
+  }
+  #knife-2 {
+    width: 13vw;
+    top: -20%;
+    left: -27%;
+  }
+  #knife-3 {
+    width: 13vw;
+    left: 9%
+  }
+  #knife-4 {
+    width: 13vw;
+  }
+  #knife-5 {
+    width: 13vw;
+    top: -5%;
+    left: -38%;
+  }
+  #knife-6 {
+    width: 13vw;
+  }
+  #knife-7 {
+    width: 13vw;
+    top: 11%;
+    left: -15%;
+  }
+  #knife-8 {
+    width: 13vw;
+    top: 2%;
+    left: 26%;
+  }
+  #knife-9 {
+    width: 13vw;
+  }
+
+
+}
+
+@media screen and (min-width: 811px) and (min-height: 374px) {
+  .heart-grid{
+    width: 29%;
+    top: 17.5vh;
+    left: 37%;
+  }
+}
+
+ @media screen and (min-width:767px) {
+  .heart-grid{
+    width: 74%;
+    top: 30.5vh;
+    left: 16%;
+  }
+
+  #knife-1 {
+    width: 19vw;
+    left: 1%;
+    top: -3%;
+  }
+  #knife-2 {
+    width: 19vw;
+    top: -20%;
+    left: -27%;
+  }
+  #knife-3 {
+    width: 19vw;
+    left: 9%
+  }
+  #knife-4 {
+    width: 19vw;
+  }
+  #knife-5 {
+    width: 19vw;
+    top: -5%;
+    left: -38%;
+  }
+  #knife-6 {
+    width: 19vw;
+  }
+  #knife-7 {
+    width: 19vw;
+    top: 11%;
+    left: -15%;
+  }
+  #knife-8 {
+    width: 19vw;
+    top: 2%;
+    left: 26%;
+  }
+  #knife-9 {
+    width: 19vw;
+  }
+}
+  @media screen and (min-width:1023px) {
+    .heart-grid{
+      width: 41%;
+      top: 13vw;
+      left: 31%;
+  }
+  #knife-1 {
+    width: 11vw;
+    left: 1%;
+    top: -3%;
+  }
+  #knife-2 {
+    width: 11vw;
+    top: -20%;
+    left: -27%;
+  }
+  #knife-3 {
+    width: 11vw;
+    left: 9%
+  }
+  #knife-4 {
+    width: 11vw;
+  }
+  #knife-5 {
+    width: 11vw;
+    top: -5%;
+    left: -38%;
+  }
+  #knife-6 {
+    width: 11vw;
+  }
+  #knife-7 {
+    width: 11vw;
+    top: 11%;
+    left: -15%;
+  }
+  #knife-8 {
+    width: 11vw;
+    top: 2%;
+    left: 26%;
+  }
+  #knife-9 {
+    width: 11vw;
+  }
+}
+/* #test-button {
+  display: none;
+  width: 10vh;
+  height: 10vh;
+  background-color: blue;
+} */
