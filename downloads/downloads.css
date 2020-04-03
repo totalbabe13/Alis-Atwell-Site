@@ -1,0 +1,217 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure,
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+* {
+  box-sizing: border-box;
+}
+ /* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 319px) {
+	.main-wrapper {
+		/* border: 4px solid red; */
+    width: 100vw;
+    height: 100vh;
+		display: grid;
+		grid-template-rows: auto 89vh;
+		background-image: url(sharks1.gif);
+		background-size: contain;
+	}
+	header {
+    width: 100vw;
+		font-size: 30px;
+    text-align: center;
+	  color: black;
+    text-shadow: 0 0 5px #FFF, 0 0 10px #FFF, 0 0 15px #FFF,
+    0 0 20px #49ff18, 0 0 30px #49FF18, 0 0 40px #49FF18,
+	  0 0 55px #49FF18, 0 0 75px #49ff18;
+	}
+	.file-grid {
+	  width: 100vw;
+	  height: 87vh;
+	  display: grid;
+	  grid-auto-rows: min-content;
+	  grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	  overflow: scroll;
+	}
+	a {
+		margin: 0 auto;
+	}
+	.file-icon {
+		height: 67px;
+    width: 56px;
+		filter: hue-rotate(71deg) drop-shadow(2px 4px 4px white)contrast(1.2);
+		margin: 0 auto;
+	}
+	.heart-link{
+		position: absolute;
+	}
+	.heart {
+		width: 56px;
+	}
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 374px) {
+	.file-icon {
+		height: 77px;
+		width: 72px;
+	}
+	.heart {
+		width: 60px;
+	}
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 567px) {
+	.file-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	.file-icon {
+		height: 77px;
+		width: 77px;
+	}
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 666px) {
+	.main-wrapper {}
+	header {
+		font-size: 40pt;
+	}
+	.file-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	a {}
+	.file-icon {
+		height: 80px;
+		width: 84px;
+	}
+	.heart {
+		width: 60px;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 767px) {
+	.main-wrapper {}
+	header {
+		font-size: 50pt;
+	}
+	.file-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	a {}
+	.file-icon {
+		height: 99px;
+    width: 99px;
+	}
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 867px) {
+	.main-wrapper {}
+	header {}
+	.file-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr;
+	}
+	a {}
+	.file-icon {
+		height: 155px;
+    width: 160px;
+	}
+}
+
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 967px) {
+	.main-wrapper {}
+	header {}
+	.file-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	a {}
+	.file-icon {
+		height: 150px;
+    width: 164px;
+	}
+}
+
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+@media (min-width: 1067px) {
+	.main-wrapper {}
+	header {}
+	.file-grid {
+		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+	}
+	a {}
+	.file-icon {
+		height: 164px;
+    width: 164px;
+	}
+}
+/* .main-wrapper {
+
+}
+header {
+
+}
+
+.file-grid {
+
+}
+a {
+
+}
+.file-icon {
+
+} */
