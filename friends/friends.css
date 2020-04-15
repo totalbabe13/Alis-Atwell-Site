@@ -1,0 +1,167 @@
+/* http://meyerweb.com/eric/tools/css/reset/
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 100%;
+  font: inherit;
+  vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+  display: block;
+}
+body {
+  line-height: 1;
+}
+ol, ul {
+  list-style: none;
+}
+blockquote, q {
+  quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+  content: '';
+  content: none;
+}
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+* {
+  box-sizing: border-box;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - -  */
+
+@media (min-width: 319px) {
+  .main-wrapper {
+    /* border: 4px solid; */
+    width: 100vw;
+    height: 100vh;
+    background-image: url(pixel_painter.png);
+    display: grid;
+    grid-auto-rows: auto 100%;
+    /* grid-row-gap: 1vh; */
+  }
+  .list-wrapper {
+    /* border: 4px solid black; */
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    display: grid;
+    grid-auto-rows: 9vh;
+    overflow: scroll;
+  }
+  a {
+    /* color: black; */
+    text-decoration: none;
+    font-size: 15pt;
+    background-color: #6f7adac4;
+    box-shadow: inset 0px 1px 20px 3px #00ff8f;
+  }
+  .friend-link {
+    position: relative;
+    top: 35%;
+    border: 1px solid #dd00ff;
+    background-color: white;
+    width: 70vw;
+    margin: 0 auto;
+  }
+  .home-heart {
+    position: absolute;
+    top: 0vh;
+    left: 2vw;
+    height: 11vh;
+  }
+  .demo-1 {
+    height: 10vh;
+    overflow: hidden;
+    position: relative;
+    /* top: 2vh; */
+    border: 4px chartreuse dashed;
+    background: rgb(3,19,245);
+    background: linear-gradient(180deg, rgba(3,19,245,1) 0%, rgba(255,255,255,1) 100%);
+  }
+  .demo-1 header {
+    font-family: monospace;
+    font-size: 27pt;
+    color: white;
+    text-shadow:  0px 0px 5px #2aff00;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    margin: 0;
+    line-height: 8vh;
+    text-align: center;
+    /* Starting position */
+    -moz-transform: translateX(100%);
+    -webkit-transform: translateX(100%);
+    transform: translateX(100%);
+    /* Apply animation to this element */
+    -moz-animation: demo-1 10s linear infinite;
+    -webkit-animation: demo-1 10s linear infinite;
+    animation: demo-1 10s linear infinite;
+  }
+  @-moz-keyframes demo-1 {
+    0% {
+      -moz-transform: translateX(100%);
+    }
+    100% {
+      -moz-transform: translateX(-100%);
+    }
+  }
+  @-webkit-keyframes demo-1 {
+    0% {
+      -webkit-transform: translateX(100%);
+    }
+    100% {
+      -webkit-transform: translateX(-100%);
+    }
+  }
+  @keyframes demo-1 {
+    0% {
+      -moz-transform: translateX(100%);
+      /* Firefox bug fix */
+      -webkit-transform: translateX(100%);
+      /* Firefox bug fix */
+      transform: translateX(100%);
+    }
+    100% {
+      -moz-transform: translateX(-100%);
+      /* Firefox bug fix */
+      -webkit-transform: translateX(-100%);
+      /* Firefox bug fix */
+      transform: translateX(-100%);
+    }
+  }
+}
+
+@media (min-width: 567px) {
+  .demo-1 {
+    height: 11vh;
+  }
+  .list-wrapper {
+    grid-auto-rows: 12vh;
+  }
+}
+
+@media (min-height: 600px) {
+
+  .list-wrapper {
+    grid-auto-rows: 9vh;
+  }
+}
+
+@media (min-height: 700px) {
+
+  .list-wrapper {
+    grid-auto-rows: 8vh;
+  }
+}
+
+ /* - - - - - - - - -  */
