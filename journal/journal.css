@@ -1,0 +1,168 @@
+/* http://meyerweb.com/eric/tools/css/reset/v2.0 | 20110126License: none (public domain)*/
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after, q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+* {
+	box-sizing: border-box;
+}
+/* - - - - - - - - - - - - - - - - - - - - - - - - - */
+@media (min-width: 319px) {
+	.main-wrapper{
+		position: relative;
+		overflow: scroll;
+		height: 100vh;
+		width: 100vw;
+		overflow: scroll;
+		background-image: url(journal_ground.jpg);
+		background-size: contain;
+		/* border: 2px solid red;
+		*/
+	}
+  .home-button{
+    height: 11vh;
+    position: absolute;
+  }
+  .main-header {
+    position: absolute;
+    top: 1vh;
+    width: 100vw;
+    font-size: 20pt;
+    text-align: center;
+    color: white;
+  }
+	.post{
+		width: 98%;
+		margin: 0 1%
+}
+	/* TEMPLATE 1 STYLES */
+	.template-1 {
+	}
+	.post-container-1 {
+		/* border: 9px solid chartreuse;
+		*/
+		height: 125vw;
+	}
+	.post-content-1 {
+		/* border: 4px solid yellow;
+		*/
+		position: relative;
+		top: -74vw;
+		left: 25vw;
+		width: 54vw;
+		height: 63vw;
+		overflow: scroll;
+	}
+	.post-title-1 {
+		color: white;
+		font-size: 9pt;
+		text-align: center;
+	}
+	.post-textblock-1 {
+		width: 48vw;
+		margin: 1vw 3vw;
+		font-size: 10pt;
+		text-align: justify;
+	}
+	.post-image-1 {
+		width: 90%;
+		margin: 0 5%;
+	}
+	/* TEMPLATE 1 STYLES -END- */
+
+  /* - - - - - - - - - - - - */
+	/* TEMPLATE 2 STYLES */
+	.template-2 {
+	}
+	.post-container-2 {
+		/* border: 9px solid chartreuse;
+		*/
+		height: 75vw;
+	}
+	.post-content-2 {
+		/* border: 4px solid yellow;
+		*/
+		position: relative;
+		top: -66vw;
+		left: 10vw;
+		width: 54vw;
+		height: 35vw;
+		overflow: scroll;
+	}
+	.post-title-2 {
+		color: white;
+		font-size: 9pt;
+		text-align: center;
+	}
+	.post-textblock-2 {
+		width: 48vw;
+		margin: 1vw 3vw;
+		font-size: 10pt;
+		text-align: justify;
+	}
+	.post-image-2 {
+		width: 90%;
+		margin: 0 5%;
+	}
+	/* TEMPLATE 2 STYLES -END- */
+  /* - - - - - - - - - - - - */
+	/* TEMPLATE 3 STYLES */
+	.template-3 {
+	}
+	.post-container-3 {
+		/* border: 9px solid chartreuse;
+		*/
+		height: 125vw;
+	}
+	.post-content-3 {
+		/* border: 4px solid yellow;
+		*/
+		position: relative;
+    top: -75vw;
+    left: 29vw;
+    width: 54vw;
+    height: 56vw;
+		overflow: scroll;
+	}
+	.post-title-3 {
+		color: white;
+		font-size: 9pt;
+		text-align: center;
+	}
+	.post-textblock-3 {
+		width: 48vw;
+		margin: 1vw 3vw;
+		font-size: 10pt;
+		text-align: justify;
+	}
+	.post-image-3 {
+		width: 90%;
+		margin: 0 5%;
+	}
+	/* TEMPLATE 3 STYLES -END- */
+}
