@@ -31,19 +31,89 @@ table {
 * {
 	box-sizing: border-box;
 }
+/* .swiper-container {
+	border: 2px solid white;
+  position: relative;
+  top: 16vh;
+  height: 79%;
+  width: 100%;
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+.swiper-slide {
+	position: relative;
+  background-position: center;
+  background-size: cover;
+  width: 300px;
+  height: 300px;
+} */
 /* - - - - - - - - - - - - - - - - - - - - - - - - - */
 @media (min-width: 319px) {
-  body {
-    /* background-image: url(vortex.gif); */
-  }
   video {
-    height: 100vh;
-    border: 8px solid chartreuse;
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+    filter: saturate(1.5)contrast(1.5);
   }
   .main-wrapper {
     height: 100vh;
     width: 100vw;
-    /* background-image: url(color_pallet1.png); */
-    border: 2px solid blue;
+    overflow: scroll;
   }
+  header {
+    position: fixed;
+    top: 2vh;
+    left: 0;
+    font-size: 14pt;
+    width: 100%;
+    height: 5%;
+    text-align: center;
+    color: #ffffff;
+    text-shadow: 2px 2px 5px #00ff1f;
+  }
+
+	.swiper-container {
+		/* border: 2px solid white; */
+	  position: relative;
+	  top: 8vh;
+	  height: auto;
+	  width: 100%;
+	  padding-top: 1vh;
+	  padding-bottom: 1vh;
+	}
+
+	.swiper-slide {
+		position: relative;
+	  background-position: center;
+	  background-size: cover;
+		width: 80vw;
+    height: 49vw;
+	}
+	.slide-caption {
+		background: #ffffff40;
+    font-size: 10pt;
+    position: relative;
+    top: 91%;
+    color: chartreuse;
+	}
+}
+@media (min-width: 567px) {
+  .slide-caption{
+	  top: 93%;
+	}
+}
+@media (min-width: 666px) {
+  .slide-caption{
+	  top: 96%;
+	}
+}
+@media (min-width: 1439px) {
+	.swiper-slide{
+		width: 1189px;
+		height: 707px;
+	}
+
 }

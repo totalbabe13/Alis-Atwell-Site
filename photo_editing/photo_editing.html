@@ -4,15 +4,86 @@
   <meta charset="utf-8">
   <link href="https://fonts.googleapis.com/css?family=Gorditas&display=swap" rel="stylesheet">
   <link href="faq.css" rel="stylesheet">
-  <link href="photo_editing.css" rel="stylesheet">
+  <!-- <link href="photo_editing.css" rel="stylesheet"> -->
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <!-- SWIPER LINKS AND SCRIPTS FROM CDN -->
+  <link href="https://unpkg.com/swiper/css/swiper.css" rel="stylesheet">
+  <link href="https://unpkg.com/swiper/css/swiper.min.css" rel="stylesheet">
+  <!-- <script src="https://unpkg.com/swiper/js/swiper.js">
+  </script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js">
+  </script> -->
+    <!-- SWIPER LINKS AND SCRIPTS FROM CDN -->
+
+    <link href="photo_editing.css" rel="stylesheet">
+
   <title>ALIS ATWELL | Photo Editing</title>
 </head>
 <body>
   <div class="main-wrapper">
-    <video autoplay muted loop id="myVideo">
-    <source src="ocean_slide.MOV" type="video/mp4">
-  </video>
+    <video autoplay muted loop playsinline id="myVideo">
+      <source src="ocean_slide1.mp4" type="video/mp4">
+    </video>
+    <header>
+       𝕻𝖍𝖔𝖙𝖔 𝕰𝖉𝖎𝖙𝖎𝖓𝖌
+    </header>
+
+    <!-- Slider main container -->
+  <div class="swiper-container">
+      <!-- Additional required wrapper -->
+      <div class="swiper-wrapper">
+          <!-- Slides -->
+
+          <div class="swiper-slide" style="background-image:url(sample_image.jpeg)">
+              <p class="slide-caption"> Credit Line // Captions</p>
+          </div>
+          <div class="swiper-slide" style="background-image:url(sample_image.jpeg)">
+              <p class="slide-caption"> Credit Line // Captions</p>
+          </div>
+          <div class="swiper-slide" style="background-image:url(sample_image.jpeg)">
+              <p class="slide-caption"> Credit Line // Captions</p>
+          </div>
+          <div class="swiper-slide" style="background-image:url(sample_image.jpeg)">
+              <p class="slide-caption"> Credit Line // Captions</p>
+          </div>
+      </div>
+      <!-- If we need pagination
+      <div class="swiper-pagination"></div> If we need navigation buttons
+      <div class="swiper-button-prev"></div>
+      <div class="swiper-button-next"></div> If we need scrollbar
+      <div class="swiper-scrollbar"></div> -->
+  </div>
+  <script src="https://unpkg.com/swiper/js/swiper.js">
+  </script>
+  <script src="https://unpkg.com/swiper/js/swiper.min.js">
+  </script>
+  <script>
+    var swiper = new Swiper('.swiper-container', {
+      // updateOnWindowResize: true,
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 50,
+        stretch: 0,
+        depth: 100,
+        modifier: 1,
+        slideShadows : true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+    });
+  </script>
+
+    <!-- <section class="carousel-wrapper">
+        <img class="carousel-image" src="sample_image.jpeg" alt="">
+        <img class="carousel-image" src="sample_image.jpeg" alt="">
+        <img class="carousel-image" src="sample_image.jpeg" alt="">
+    </section> -->
+
   </div>
 
 </body>
