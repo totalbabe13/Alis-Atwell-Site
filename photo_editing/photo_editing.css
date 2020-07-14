@@ -100,7 +100,7 @@ table {
         background: #00000066;
         font-size: 9pt;
         position: relative;
-        top: 91%;
+        top: 90%;
         color: chartreuse;
     }
     
@@ -150,10 +150,25 @@ table {
 		height: 100px;
 	}
 }
-@media (min-width: 1439px) {
-	/* .swiper-slide{
-		width: 1189px;
-		height: 707px;
-	} */
+@media (min-width: 750px) and (min-height: 750px) {
+    header {
+        font-size: 36pt;
+    }
+	.swiper-slide {
+		height: 70vw;
+        width: 70vw;
+        max-width: 700px;
+        max-height: 700px;
+    }
+    .slide-caption{
+	    font-size: 14pt;
+	}
+    .links-header {
+        font-size: 22pt;
+    }
+    .link-text {
+        font-size: 17pt;
+        margin: 0 0 1em 0;
+    }
 
 }
