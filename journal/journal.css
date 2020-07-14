@@ -166,3 +166,15 @@ table {
 	}
 	/* TEMPLATE 3 STYLES -END- */
 }
+
+@media (min-width: 813px) and (min-height: 813px) {
+	.post-textblock-1 {
+		font-size: 12pt;
+	}
+	.post-textblock-2 {
+		font-size: 12pt;
+	}
+	.post-textblock-3 {
+		font-size: 12pt;
+	}
+}
