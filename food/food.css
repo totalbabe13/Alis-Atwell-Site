@@ -54,132 +54,56 @@ table {
 
 @media (min-width: 319px) {
 	.martini {
-	  width: 100px;
+	    width: 100px;
 	}
 	.page-wrapper{
 		background-image: url(ants12.gif);
-    height: 100vh;
-    width: 100vw;
-	}
-	.nav-container {
-		background: url(../assets/images/bit_backdrop.jpg);
-		background-size: contain;
-		position: fixed;
-		top: 0vh;
-		height: 9vh;
-		width: 100vw;
-		margin: 0 auto;
-		display: grid;
-		grid-template-rows: 1fr 1fr;
-		grid-template-columns: repeat(4,1fr);
-		z-index: 1;
-		border: 3px solid #7163ea;
-		border-radius: 3px;
-	}
-	.nav-link-top {
-		padding-top: 0.3vh;
-		font-family: 'Gorditas';
-		position: relative;
-		background-color: #ffc10778;
-		height: auto;
-		font-size: 9pt;
-		text-align: center;
-		vertical-align: middle;
-		border: 2px solid #00a1ff54;
-	}
-	.view-container {
-
+        height: 100vh;
+        width: 100vw;
 	}
 
-	.nav-footer{
-	   background: url(../assets/images/bit_backdrop.jpg);
-	   background-size: contain;
-	   position: fixed;
-	   left: 0;
-	   bottom: 0;
-	   height: auto;;
-	   width: 100vw;
-	   margin: 0 auto;
-	   display: grid;
-	   grid-template-rows: 1fr;
-	   grid-template-columns: repeat(4,1fr);
-	   z-index: 1;
-	   border: 3px solid #7163ea;
-	   border-radius: 3px;
-	}
-	.header-main {
+	.header-food {
 		font-family: Gorditas;
 		position: relative;
 		width: 100vw;
-		top: 11vh;
 		text-align: center;
-		font-size: 29pt;
+		font-size: 19pt;
 		color: white;
-    text-shadow: 0px 0px 4px #4d00ff;
+		text-shadow: 0px 0px 4px #4d00ff;
+		margin: 5px 0 0 0;		
 	}
-	.view-container{
-		width: 100vw;
-    height: 50vh;
-    border: 2px solid red;
-    position: relative;
-    top: 19vh;
+	
+	.content-grid {
+		height: 100%;
+		width: 100%;
 		display: grid;
-    grid-template-columns:  1fr 80% 1fr;
+		grid-template-rows: 33px 1fr 33px;
 	}
-	#left-button {
-		position: relative;
-    top: 46%;
-    font-size: 18pt;
-    color: #f403b2;
-    height: 5vh;
-    text-align: center;
-		box-shadow: 0px 0px 5px black;
-	}
-	#right-button {
-		position: relative;
-    top: 46%;
-    font-size: 18pt;
-    color: #f403b2;
-    height: 5vh;
-    text-align: center;
-		box-shadow: 0px 0px 5px black;
-	}
-	#content-container{
-
-	}
-
-	.image-1 {
-		/* display: none; */
-		width: 98%;
-    margin: 1px 3px;
-	}
-
-	.image-2 {
-		display: none;
-		position: relative;
-		top: 17%;
-    width: 98%;
-    margin: 1px 3px;
-	}
-
-	.image-3 {
-		display: none;
-		width: 98%;
-    margin: 1px 3px;
-	}
-
-
 	.header-home {
 		font-family: Gorditas;
 		position: relative;
-		top: 26vh;
 		width: 100vw;
 		text-align: center;
-		font-size: 29pt;
+		font-size: 19pt;
 		color: white;
-    text-shadow: 0px 0px 4px #4d00ff;
+        text-shadow: 0px 0px 4px #4d00ff;
 	}
 
+	.view-container {
+		height: 85%;
+        width: 100%;
+		align-self: center;
+		display: grid;
+        grid-template-rows: 0;
+		grid-template-columns: 1fr 1fr 1fr 1fr;
+		grid-column-gap: 50px;
+		overflow-x: scroll;
+	}
+
+	.food-image {
+		height: -webkit-fill-available;
+	}
+	
 	.ants {
 		height: 100vh;
 		position: absolute;
@@ -187,111 +111,15 @@ table {
 	}
 }
 
-@media (min-width: 567px) {
-	.page-wrapper{
-		background-image: url(ants11.gif);
-	}
-  .nav-container {
-        height: auto;
-  }
-	.header-main {
-    top: 14vh;
-	}
-	.header-home {
-		top: 17vh;
-	}
+@media screen and (min-width:850px){
 	.view-container {
-		top: 15vh;
-	}
-	#left-button {
-		box-shadow: none;
-	}
-	#right-button {
-		box-shadow: none;
-	}
-}
-
-@media (min-width: 767px) {
-	.page-wrapper{
-		background: url(ants12.gif) no-repeat center center fixed;
-	 -webkit-background-size: cover;
-	 -moz-background-size: cover;
-	 -o-background-size: cover;
-	 background-size: cover;
-	}
-	.header-main {
-		top: 9vh;
-    font-size: 49pt;
-	}
-	.nav-link-top {
-		font-size: 17pt;
-	}
-	.header-home {
-		top: 24vh;
-		font-size: 49pt;
-	}
-	.martini {
-	  width: 200px;
-	}
-}
-
-@media (min-width: 811px) {
-	.page-wrapper{
-		background-image: url(ants11.gif);
-	}
-	.header-main {
-		font-size: 20pt;
-    top: 17vh;
-	}
-	.header-home {
-		font-size: 20pt;
-		top: 20vh;
-	}
-
-	.view-container {
-		top: 19vh;
-	}
-	.nav-footer{
-		height: 7vh;
-	}
-}
-
-@media (min-height: 900px) {
-	.page-wrapper{
-		background-image: url(ants11.gif);
-	}
-	.header-main {
-		font-size: 35pt;
-		top: 11vh;
-	}
-	.header-home {
-		font-size: 35pt;
-		top: 26vh;
-	}
-}
-
-@media (min-width: 1000px) {
-	.page-wrapper{
-		background-image: url(ants11.gif);
-		background-size: contain;
-	}
-	.header-main {
-		font-size: 35pt;
-		top: 11vh;
-	}
-	.header-home {
-		font-size: 35pt;
-		top: 26vh;
+		height: 70%;
 	}
 }
 
 
-
- /* - - - - - - - - - - - - */
-
-/* .martini {
-  width: 100px;
-} */
+/* - - - - - - - - - - - - */
+/* Martini */
 
 .martini {
 /* Adjust animation duration to change the element’s speed */
