@@ -1,0 +1,67 @@
+body {
+    background: url(cards.jpg) no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+}
+
+header {
+    font-size: 26pt;
+    font-family: sans-serif;
+    text-align: center;
+    position: fixed;
+    -webkit-text-stroke: 1px #47ff00;
+    -webkit-text-fill-color: #000000;
+    filter: drop-shadow(-2px 3px 0px black);
+    width: 100%;
+    z-index: 1;
+}
+
+@media screen and (min-width: 320px){
+    .spacer {
+        height: 3em;
+    }
+    .game-grid {
+       height: 50px;
+       background-color: white;
+       filter: drop-shadow(-2px 2px 4px black);
+       margin: 3em 0; 
+       border: 1px solid;
+       display: grid;
+       grid-template-columns: 36% 64%;
+       z-index: 2;
+    }
+    .game-piece {
+        width: 5.5em;
+        filter: saturate(1.2);
+        position: relative;
+        left: 1em;
+    }
+    .game-text {
+        width: 7em;
+        margin: 0.5em auto;
+        filter: drop-shadow(-2px 2px 2px black);
+    }
+}
+
+@media screen and (min-width: 800px) and (min-height: 800px) {
+    header {
+        font-size: 55pt;
+    }
+    .spacer {
+        height: 3em;
+    }
+    .game-grid {
+       height: 80px;
+    }
+    .game-piece {
+        width: 7.5em;
+        
+    }
+    .game-text {
+        width: 11em;
+        margin: 0.5em auto;
+        filter: drop-shadow(-2px 2px 2px black);
+    }
+}
