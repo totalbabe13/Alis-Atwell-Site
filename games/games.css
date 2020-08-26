@@ -22,6 +22,21 @@ header {
     .spacer {
         height: 3em;
     }
+    .desktop-text{
+        background-color: black;
+        color: chartreuse;
+        font-size: 2em;
+        margin: 2em 0 -1em 0;
+        text-align: center;
+        animation:blinking 1.5s infinite;
+    }
+    @keyframes blinking{
+        0%{   color: chartreuse;   }
+        47%{   color: #000; }
+        62%{   color: transparent; }
+        97%{   color:transparent; }
+        100%{  color: #000;   }
+        }
     .game-grid {
        height: 50px;
        background-color: white;
@@ -48,6 +63,9 @@ header {
 @media screen and (min-width: 800px) and (min-height: 800px) {
     header {
         font-size: 55pt;
+    }
+    .desktop-text{
+        font-size: 4em;
     }
     .spacer {
         height: 3em;

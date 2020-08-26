@@ -1,0 +1,34 @@
+@media screen and (min-width: 320px) {
+    .counter {
+        position: relative;
+        top: 10%;
+    }
+}
+
+@media screen and (min-width: 568px) {
+    .counter {
+        position: relative;
+        top: 10%;
+    }
+}
+
+@media screen and (min-width: 667px) {
+    .counter {
+        position: relative;
+        top: 14%;
+    }
+}
+
+@media screen and (min-width: 812px) {
+    .counter {
+        position: relative;
+        top: 22%;
+    }
+}
+
+@media screen and (min-width: 775px) and (min-height: 775px) {
+    .counter {
+        position: relative;
+        top: 15%;
+    }
+}
