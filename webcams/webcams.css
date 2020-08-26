@@ -26,8 +26,8 @@
     background: linear-gradient(0deg, rgba(121,242,244,0.7) 0%, rgba(255,255,255,1.5) 100%);
     overflow: scroll;
     display: grid;
-    grid-auto-rows: 8vh;
-    grid-gap: 2vh;
+    grid-auto-rows: 3em;
+    grid-gap: 1em;
   }
   .link-wrapper{
     background-color: #00ff3359;
@@ -68,10 +68,12 @@
   }
 }
 
-/* @keyframes blinkingText{
-  0%{     color: #000;    }
-  49%{    color: #000; }
-  60%{    color: transparent; }
-  99%{    color:transparent;  }
-  100%{   color: #000;    }
-} */
+@media screen and (min-width:750px) and (min-height: 750px){
+  .cam-link-text {
+    margin: 1% 0 0 0;
+  }
+  .content-grid{
+    grid-auto-rows: 8%;
+    grid-gap: 2.5%;
+  }
+}
